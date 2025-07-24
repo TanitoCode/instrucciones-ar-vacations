@@ -1,32 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Generador de página de bienvenida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f7f7f7;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Generar página de bienvenida</h1>
+  <h1>Generador de página de bienvenida</h1>
 
   <form id="formulario">
-    <label>Nombre de la propiedad:<br>
+    <label>Nombre de la propiedad:
       <input type="text" name="nombre_propiedad" required>
-    </label><br><br>
+    </label>
 
-    <label>Link a Google Maps:<br>
+    <label>Link a Google Maps:
       <input type="url" name="link_maps" required>
-    </label><br><br>
+    </label>
 
-    <label>Instrucciones de ingreso:<br>
+    <label>Instrucciones de ingreso:
       <textarea name="instrucciones" rows="6" required></textarea>
-    </label><br><br>
+    </label>
 
-    <label>Nombre WiFi:<br>
+    <label>Nombre WiFi:
       <input type="text" name="wifi_nombre" required>
-    </label><br><br>
+    </label>
 
-    <label>Contraseña WiFi:<br>
+    <label>Contraseña WiFi:
       <input type="text" name="wifi_password" required>
-    </label><br><br>
+    </label>
+
+    <label>Imagen de cerradura (URL):
+      <input type="url" name="img_cerradura">
+    </label>
+
+    <label>Video de apertura (YouTube u otro):
+      <input type="url" name="link_video_puerta">
+    </label>
+
+    <label>Imagen de entrada (URL):
+      <input type="url" name="foto_entrada">
+    </label>
+
+    <label>Título de la entrada:
+      <input type="text" name="titulo_entrada">
+    </label>
+
+    <label>Video exterior (YouTube u otro):
+      <input type="url" name="link_video_entrada">
+    </label>
+
+    <label>Nombre de contacto:
+      <input type="text" name="contacto_nombre" required>
+    </label>
+
+    <label>Teléfono de contacto:
+      <input type="text" name="contacto_tel" required>
+    </label>
+
+    <label>Instagram:
+      <input type="url" name="instagram">
+    </label>
+
+    <label>Email:
+      <input type="email" name="email">
+    </label>
 
     <button type="submit">Generar HTML</button>
   </form>
@@ -36,19 +97,41 @@
       e.preventDefault();
       const data = Object.fromEntries(new FormData(e.target).entries());
 
-      const contenido = `
-<!DOCTYPE html>
-<html lang="es">
-<head><meta charset="UTF-8"><title>Bienvenido a ${data.nombre_propiedad}</title></head>
+      const contenido = `<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Bienvenido a ${data.nombre_propiedad}</title>
+</head>
 <body>
   <h1>BIENVENIDOS</h1>
   <p>CHECK-IN ${data.nombre_propiedad}</p>
-  <a href="${data.link_maps}" target="_blank">Ubicación</a>
-  <h2>Instrucciones</h2>
+  <a href='${data.link_maps}' target='_blank'>Ubicación</a>
+
+  <h2>INSTRUCCIONES PARA ACCESAR AL EDIFICIO Y DEPARTAMENTO</h2>
   <p>${data.instrucciones}</p>
+
   <h3>WiFi</h3>
   <p>Nombre: ${data.wifi_nombre}</p>
   <p>Contraseña: ${data.wifi_password}</p>
+
+  ${data.img_cerradura ? `<img src='${data.img_cerradura}' alt='Cerradura' style='max-width: 100%;'>` : ''}
+
+  ${data.link_video_puerta ? `<p><a href='${data.link_video_puerta}' target='_blank'>Video: Cómo abrir la puerta</a></p>` : ''}
+
+  ${data.foto_entrada ? `<img src='${data.foto_entrada}' alt='Entrada principal' style='max-width: 100%;'>` : ''}
+
+  ${data.titulo_entrada ? `<h3>${data.titulo_entrada}</h3>` : ''}
+
+  ${data.link_video_entrada ? `<p><a href='${data.link_video_entrada}' target='_blank'>Video exterior</a></p>` : ''}
+
+  <hr>
+
+  <p>¿Dudas? Contactanos:</p>
+  <p>${data.contacto_nombre} - ${data.contacto_tel}</p>
+
+  ${data.email ? `<p>Email: <a href='mailto:${data.email}'>${data.email}</a></p>` : ''}
+  ${data.instagram ? `<p>Instagram: <a href='${data.instagram}' target='_blank'>${data.instagram}</a></p>` : ''}
 </body>
 </html>`;
 
