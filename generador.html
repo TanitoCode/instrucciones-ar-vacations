@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de página de bienvenida</title>
+</head>
+<body>
+  <h1>Generar página de bienvenida</h1>
+
+  <form id="formulario">
+    <label>Nombre de la propiedad:<br>
+      <input type="text" name="nombre_propiedad" required>
+    </label><br><br>
+
+    <label>Link a Google Maps:<br>
+      <input type="url" name="link_maps" required>
+    </label><br><br>
+
+    <label>Instrucciones de ingreso:<br>
+      <textarea name="instrucciones" rows="6" required></textarea>
+    </label><br><br>
+
+    <label>Nombre WiFi:<br>
+      <input type="text" name="wifi_nombre" required>
+    </label><br><br>
+
+    <label>Contraseña WiFi:<br>
+      <input type="text" name="wifi_password" required>
+    </label><br><br>
+
+    <button type="submit">Generar HTML</button>
+  </form>
+
+  <script>
+    document.getElementById('formulario').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+
+      const contenido = `
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Bienvenido a ${data.nombre_propiedad}</title></head>
+<body>
+  <h1>BIENVENIDOS</h1>
+  <p>CHECK-IN ${data.nombre_propiedad}</p>
+  <a href="${data.link_maps}" target="_blank">Ubicación</a>
+  <h2>Instrucciones</h2>
+  <p>${data.instrucciones}</p>
+  <h3>WiFi</h3>
+  <p>Nombre: ${data.wifi_nombre}</p>
+  <p>Contraseña: ${data.wifi_password}</p>
+</body>
+</html>`;
+
+      const blob = new Blob([contenido], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${data.nombre_propiedad.replace(/\s+/g, "_").toLowerCase()}.html`;
+      a.click();
+    });
+  </script>
+</body>
+</html>
