@@ -90,6 +90,10 @@ form h2 {
   margin-top: 10px;
   display: inline-block;
 }
+.preformateado {
+  text-align: center;
+  white-space: pre-line; /* respeta saltos de línea y listas */
+}
 
 /* Mejorar legibilidad en móvil */
 @media (max-width: 600px) {
