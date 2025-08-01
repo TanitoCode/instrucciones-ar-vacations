@@ -58,3 +58,42 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
+
+
+/* Evita que los inputs del formulario queden uno al lado del otro */
+form label {
+  display: block;
+  width: 100%;
+}
+
+/* Espaciado entre secciones del formulario */
+form h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+/* Centrar los párrafos y respetar saltos de línea */
+.preview p {
+  text-align: center;
+  white-space: pre-line; /* respeta saltos de línea */
+}
+
+/* Centrar todo el contenido de la vista previa */
+.preview {
+  text-align: center;
+}
+
+/* Botones uniformes */
+.preview a.btn {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* Mejorar legibilidad en móvil */
+@media (max-width: 600px) {
+  form label, input, textarea {
+    font-size: 1rem;
+  }
+}
