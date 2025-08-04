@@ -108,13 +108,19 @@
   </section>
 
   <section class="mt-5">
-    <h2>¿Necesitas ayuda durante tu estancia?</h2>
-    <p>${data.contacto_nombre || ''}</p>
-    <p>Teléfono: ${data.contacto_tel}</p>
-    <p><a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
-    WhatsApp</a></p>
+  <h2>¿Necesitas ayuda durante tu estancia?</h2>
+  <p class="mb-2">${data.contacto_nombre || ''}</p>
+  <p class="mb-2">Teléfono: ${data.contacto_tel || ''}</p>
 
-  </section>
+  ${data.contacto_tel ? `
+    <div class="btn-whatsapp-container" style="margin: 0;">
+      <a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
+        WhatsApp
+      </a>
+    </div>
+  ` : ''}
+</section>
+
 
   <footer class="text-center mt-5 bg-dark text-white py-3">
     <p>Síguenos en Instagram: @arvacaciones</p>
