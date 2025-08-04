@@ -91,8 +91,10 @@ form h2 {
   display: inline-block;
 }
 .preformateado {
-  text-align: center;
-  white-space: pre-line; /* respeta saltos de línea y listas */
+  text-align: left;
+  white-space: pre-wrap;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
 }
 
 /* Mejorar legibilidad en móvil */
