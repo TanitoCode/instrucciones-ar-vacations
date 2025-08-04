@@ -90,6 +90,23 @@ form h2 {
   margin-top: 10px;
   display: inline-block;
 }
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: white;
+}
 .preformateado {
   text-align: left;
   white-space: pre-wrap;
