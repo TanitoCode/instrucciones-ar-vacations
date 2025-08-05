@@ -123,13 +123,13 @@
   ` : ''}
 </section>
 
-  <section class="mt-5">
+  <section class="mt-5 text-center">
   <h2>¿Necesitas ayuda durante tu estancia?</h2>
   <p class="mb-2">${data.contacto_nombre || ''}</p>
   <p class="mb-2">Teléfono: ${data.contacto_tel || ''}</p>
 
   ${data.contacto_tel ? `
-    <div class="btn-whatsapp-container" style="margin: 0;">
+    <div class="btn-whatsapp-container">
       <a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
         WhatsApp
       </a>
