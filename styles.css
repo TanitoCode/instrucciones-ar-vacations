@@ -110,12 +110,28 @@ form h2 {
   background-color: #1ebe5d;
   color: white;
 }
+
+/* Centralizado de textos*/
 .preformateado {
   text-align: center;
   white-space: pre-wrap;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
+
+/* Proporciones imagenes*/
+.img-principal {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Mejorar legibilidad en móvil */
 @media (max-width: 600px) {
