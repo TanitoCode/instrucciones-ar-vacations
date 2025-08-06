@@ -153,14 +153,14 @@ form h2 {
 }
 
 .logo-arvac {
-  max-width: 100%;
-  height: auto;
   display: block;
   margin: 0 auto 20px auto;
+  max-width: 180px;
+  height: auto;
 }
 
 @media (max-width: 600px) {
   .logo-arvac {
-    max-width: 80%;
+    max-width: 120px;
   }
 }
