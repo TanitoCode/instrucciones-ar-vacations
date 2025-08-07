@@ -185,7 +185,7 @@ form h2 {
     height: auto;
     display: block;
   }
-  
+
   header h1,
   header p {
     font-size: 1.1rem;
@@ -206,11 +206,16 @@ form h2 {
     margin: 15px auto;
   }
 
-  .btn-whatsapp {
+  .btn,
+  .btn-whatsapp,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 12px;
     font-size: 1rem;
-    padding: 8px 20px;
-    display: inline-block;
-    margin: 10px auto;
+    padding: 10px 0;
+    display: block;
   }
 
   footer {
