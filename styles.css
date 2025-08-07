@@ -163,6 +163,14 @@ form h2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo adaptable*/
+.logo-arvac {
+  display: block;
+  margin: 0 auto 20px auto;
+  max-width: 200px;
+  height: auto;
+}
+
 
 /* Mejorar legibilidad en móvil */
 @media (max-width: 600px) {
@@ -170,14 +178,14 @@ form h2 {
     padding: 10px;
   }
 
-  header img,
   .logo-arvac {
+    width: 100%;
     max-width: 100%;
+    padding: 0 20px;
     height: auto;
-    margin: 0 auto 10px auto;
     display: block;
   }
-
+  
   header h1,
   header p {
     font-size: 1.1rem;
