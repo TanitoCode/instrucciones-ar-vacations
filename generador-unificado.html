@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="https://instrucciones-ar-vacations.netlify.app/styles.css">
   <!-- Tipografías de Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
 </head>
 
@@ -21,9 +23,14 @@
     <label class="form-label">Nombre de la propiedad
       <input type="text" name="nombre_propiedad" class="form-control" required>
     </label>
+    <label class="form-label">Subtítulo del encabezado (ej. “Tu refugio exclusivo en Tulum”)
+      <input type="text" name="subtitulo_header" class="form-control" placeholder="Tu refugio exclusivo en ...">
+    </label>
     <label class="form-label">Descripción de bienvenida
       <textarea name="descripcion_bienvenida" rows="3" class="form-control"></textarea>
     </label>
+
+
 
     <h2 class="mt-5">2. Instrucciones de ingreso</h2>
     <label class="form-label">Link a Google Maps
@@ -93,7 +100,7 @@
   <header class="text-center">
   <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
    <h1>Bienvenid@ a ${data.nombre_propiedad}</h1>
-  <p class="lead">Tu refugio exclusivo en Playa del Carmen</p>
+  <p class="lead">${data.subtitulo_header}</p>
   ${data.descripcion_bienvenida ? `<p class="mt-3 preformateado">${data.descripcion_bienvenida}</p>` : ''}
   ${data.link_maps ? `<a href="${data.link_maps}" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>` : ''}
 </header>
