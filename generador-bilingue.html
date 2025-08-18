@@ -261,18 +261,36 @@
     </div>` : ''}
 </section>
 
-    <section class="mt-5 text-center">
-      <h2>¿Necesitas ayuda durante tu estancia?</h2>
-      <p class="mb-2">${data.contacto_nombre || ''}</p>
-      <p class="mb-2">Teléfono: ${data.contacto_tel || ''}</p>
+  <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
+<section class="mt-5 text-center lang lang-es">
+  <h2>¿Necesitas ayuda durante tu estancia?</h2>
+  <p class="mb-2">${data.contacto_nombre || ''}</p>
+  <p class="mb-2">Teléfono: ${data.contacto_tel || ''}</p>
 
-      ${data.contacto_tel ? `
-        <div class="btn-whatsapp-container">
-          <a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
-            WhatsApp
-          </a>
-        </div>` : ''}
-    </section>
+  ${data.contacto_tel ? `
+    <div class="btn-whatsapp-container">
+      <a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
+        WhatsApp
+      </a>
+    </div>
+  ` : ''}
+</section>
+
+<!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
+<section class="mt-5 text-center lang lang-en">
+  <h2>Need help during your stay?</h2>
+  <p class="mb-2">${data.contacto_nombre || ''}</p>
+  <p class="mb-2">Phone: ${data.contacto_tel || ''}</p>
+
+  ${data.contacto_tel ? `
+    <div class="btn-whatsapp-container">
+      <a href="https://wa.me/${data.contacto_tel.replace(/[^0-9]/g, '')}" target="_blank" class="btn-whatsapp">
+        WhatsApp
+      </a>
+    </div>
+  ` : ''}
+</section>
+
 
     <footer class="text-center mt-5 bg-dark text-white py-4">
       <div class="mb-3">
