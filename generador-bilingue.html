@@ -213,21 +213,53 @@
 </section>
 
 
-    <section class="mt-5 text-center">
-      <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-      <p class="preformateado">
-        Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+<section class="mt-5 text-center lang lang-es">
+  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
+  <p class="preformateado">
+    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
 
-        👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
+    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
 
-        Operador autorizado: Cancun Amazing Travel  
-        📞 WhatsApp: +52 998 654 8001
+    Operador autorizado: Cancun Amazing Travel  
+    📞 WhatsApp: +52 998 654 8001
 
-        Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-      </p>
+    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
+  </p>
 
-      ${data.beneficio_link ? `<a href="${data.beneficio_link}" class="btn btn-secondary" target="_blank">Ver flyer</a>` : ''}
-    </section>
+  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
+    Contactar por WhatsApp
+  </a>
+
+  ${data.beneficio_link ? `
+    <div class="mt-3">
+      <a href="${data.beneficio_link}" class="btn btn-secondary" target="_blank">Ver flyer</a>
+    </div>` : ''}
+</section>
+
+<!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
+<section class="mt-5 text-center lang lang-en">
+  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
+  <p class="preformateado">
+    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
+
+    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
+
+    Authorized operator: Cancun Amazing Travel  
+    📞 WhatsApp: +52 998 654 8001
+
+    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
+  </p>
+
+  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
+    Contact via WhatsApp
+  </a>
+
+  ${data.beneficio_link ? `
+    <div class="mt-3">
+      <a href="${data.beneficio_link}" class="btn btn-secondary" target="_blank">View flyer</a>
+    </div>` : ''}
+</section>
 
     <section class="mt-5 text-center">
       <h2>¿Necesitas ayuda durante tu estancia?</h2>
