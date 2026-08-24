@@ -9,10 +9,102 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
+
+  <!-- ===== SKIN: Postal Playera (prueba visual, solo esta página) ===== -->
+  <style>
+    :root{
+      --bg:#FFF7E8;
+      --surface:#ffffff;
+      --text:#26343A;
+      --muted:#4A5A60;
+      --line:#EADFC4;
+      --teal:#00A9A5;
+      --coral:#E0631E;
+      --yellow:#FFD166;
+    }
+
+    h1, h2, h3{
+      font-family:'Fredoka', sans-serif;
+      border-bottom:none;
+    }
+
+    header{
+      background:var(--teal);
+      border:none;
+      border-radius:22px;
+      overflow:hidden;
+    }
+    header h1{ color:#FFF7E8; }
+    header .lead{ color:#D7F5F2; font-weight:600; }
+    header .preformateado{ color:#EAFBF9; }
+    header .logo-arvac{
+      border-radius:50%;
+      background:#fff;
+      padding:6px;
+    }
+    header .btn-outline-dark{
+      color:#FFF7E8;
+      border:1.5px dashed rgba(255,247,232,0.7);
+      background:transparent;
+      border-radius:999px;
+    }
+    header .btn-outline-dark:hover{
+      background:rgba(255,247,232,0.15);
+      color:#FFF7E8;
+    }
+
+    section{
+      border:none;
+      border-radius:20px;
+      box-shadow:0 4px 12px rgba(38,52,58,0.08);
+    }
+
+    section h2{ color:#00807D; }
+
+    .btn-primary{
+      background:#26343A;
+      border-color:#26343A;
+      border-radius:999px;
+    }
+    .btn-primary:hover{
+      background:#182226;
+      border-color:#182226;
+    }
+
+    .code-chip{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      background:var(--yellow);
+      color:#7A4E00;
+      font-family:'Fredoka', sans-serif;
+      font-weight:600;
+      font-size:1.15em;
+      letter-spacing:1px;
+      padding:4px 16px;
+      border-radius:10px;
+      margin:6px 0;
+    }
+
+    .lang-switch{
+      background:#fff;
+      border:2px dashed var(--teal);
+    }
+    #lang-es:checked ~ .lang-switch label[for="lang-es"],
+    #lang-en:checked ~ .lang-switch label[for="lang-en"]{
+      background:var(--teal);
+      color:#fff;
+    }
+
+    footer.bg-dark{
+      background:#26343A;
+    }
+    footer p{ color:#D7F5F2; }
+  </style>
 </head>
 <body>
 
@@ -70,14 +162,9 @@ Da tu nombre y menciona que vienes con AR Vacaciones.
 
 
 3. Acceso al condominio
-Código para la puerta principal:
-8640#
-
+Código para la puerta principal:</p><p class="preformateado"><span class="code-chip">🔐 8640#</span></p><p class="preformateado">
 4. Entrada al departamento D102
-Junto a la puerta encontrarás un lockbox.
-
-Código: 3355
-
+Junto a la puerta encontrarás un lockbox.</p><p class="preformateado"><span class="code-chip">🔑 3355</span></p><p class="preformateado">
 Dentro están las llaves de tu estancia.
 
 
@@ -112,14 +199,9 @@ The reception desk is located behind a gray door, near the end of the white wall
 Give your name and mention that you are with AR Vacaciones.
 
 3. Condominium Access
-Code for the main entrance:
-8640#
-
+Code for the main entrance:</p><p class="preformateado"><span class="code-chip">🔐 8640#</span></p><p class="preformateado">
 4. Entrance to Apartment D102
-Next to the door, you will find a lockbox.
-
-Code: 3355
-
+Next to the door, you will find a lockbox.</p><p class="preformateado"><span class="code-chip">🔑 3355</span></p><p class="preformateado">
 Inside are the keys to your stay.
 
 5. Vehicle Access
