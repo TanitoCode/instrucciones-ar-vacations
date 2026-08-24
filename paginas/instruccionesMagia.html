@@ -10,7 +10,7 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Google Fonts (Nunito + Fredoka) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 
@@ -23,6 +23,7 @@
       --muted:#4A5A60;
       --line:#EADFC4;
       --teal:#00A9A5;
+      --teal-dark:#00807D;
       --coral:#E0631E;
       --yellow:#FFD166;
     }
@@ -32,62 +33,130 @@
       border-bottom:none;
     }
 
-    header{
+    section{ border:none; box-shadow:none; }
+
+    /* ---- HERO ---- */
+    .hero-postal{
+      position:relative;
       background:var(--teal);
-      border:none;
-      border-radius:22px;
+      color:#FFF7E8;
+      border-radius:24px;
+      padding:36px 22px 30px;
       overflow:hidden;
     }
-    header h1{ color:#FFF7E8; }
-    header .lead{ color:#D7F5F2; font-weight:600; }
-    header .preformateado{ color:#EAFBF9; }
-    header .logo-arvac{
+    .hero-postal::before{
+      content:"";
+      position:absolute; top:-40px; right:-40px;
+      width:140px; height:140px; border-radius:50%;
+      background:var(--yellow); opacity:.22;
+    }
+    .hero-postal::after{
+      content:"";
+      position:absolute; bottom:-30px; left:-30px;
+      width:110px; height:110px; border-radius:50%;
+      background:#FFF7E8; opacity:.15;
+    }
+    .hero-postal > *{ position:relative; }
+    .hero-badge{
+      display:inline-flex; align-items:center; gap:6px;
+      background:#FFF7E8; color:var(--teal-dark);
+      padding:6px 14px; border-radius:999px;
+      font-size:.75rem; font-weight:700; letter-spacing:.4px;
+    }
+    .hero-postal .logo-arvac{
       border-radius:50%;
       background:#fff;
       padding:6px;
+      width:64px;
     }
-    header .btn-outline-dark{
+    .hero-postal h1{ color:#FFF7E8; margin-top:12px; }
+    .hero-postal .lead{ color:#D7F5F2; font-weight:600; }
+    .hero-address{
+      display:inline-flex; align-items:center; gap:8px;
+      margin-top:6px; padding:10px 16px;
+      border:1.5px dashed rgba(255,247,232,.6); border-radius:14px;
+      font-size:.85rem; color:#FFF7E8;
+    }
+    .hero-postal .btn-outline-dark{
       color:#FFF7E8;
       border:1.5px dashed rgba(255,247,232,0.7);
       background:transparent;
       border-radius:999px;
     }
-    header .btn-outline-dark:hover{
+    .hero-postal .btn-outline-dark:hover{
       background:rgba(255,247,232,0.15);
       color:#FFF7E8;
     }
 
-    section{
-      border:none;
-      border-radius:20px;
+    /* ---- STEPS ---- */
+    section h2{ color:var(--teal-dark); margin-bottom:1.25rem; }
+
+    .steps{ display:flex; flex-direction:column; gap:14px; text-align:left; }
+
+    .step-card{
+      display:flex; gap:14px; align-items:flex-start;
+      background:var(--surface); border-radius:18px; padding:16px;
       box-shadow:0 4px 12px rgba(38,52,58,0.08);
     }
+    .step-card.coral{ background:var(--coral); color:#FFF7E8; }
+    .step-card.teal{ background:var(--teal); color:#FFF7E8; }
 
-    section h2{ color:#00807D; }
+    .step-badge{
+      flex:none; width:34px; height:34px; border-radius:50%;
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem;
+      background:var(--yellow); color:#7A4E00;
+    }
+    .step-card.coral .step-badge,
+    .step-card.teal .step-badge{ background:#FFF7E8; }
+    .step-card.coral .step-badge{ color:var(--coral); }
+    .step-card.teal .step-badge{ color:var(--teal-dark); }
 
-    .btn-primary{
-      background:#26343A;
-      border-color:#26343A;
-      border-radius:999px;
-    }
-    .btn-primary:hover{
-      background:#182226;
-      border-color:#182226;
-    }
+    .step-title{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:1rem; margin:0 0 4px; }
+    .step-card.coral .step-title, .step-card.teal .step-title{ color:#FFF7E8; }
+    .step-card:not(.coral):not(.teal) .step-title{ color:var(--teal-dark); }
+    .step-text{ margin:0; font-size:.92rem; line-height:1.55; color:var(--muted); }
+    .step-card.coral .step-text, .step-card.teal .step-text{ color:#FFF0E4; }
+    .step-card.teal .step-text{ color:#E3FBF8; }
+    .step-list{ margin:0 0 0 1.1rem; padding:0; font-size:.92rem; line-height:1.6; color:var(--muted); }
 
     .code-chip{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      background:var(--yellow);
-      color:#7A4E00;
-      font-family:'Fredoka', sans-serif;
-      font-weight:600;
-      font-size:1.15em;
-      letter-spacing:1px;
-      padding:4px 16px;
-      border-radius:10px;
-      margin:6px 0;
+      display:inline-flex; align-items:center; gap:8px;
+      background:#FFF7E8; font-family:'Fredoka', sans-serif; font-weight:700;
+      font-size:1.2rem; letter-spacing:2px; padding:8px 18px;
+      border-radius:12px; margin-top:10px;
+    }
+    .step-card.coral .code-chip{ color:var(--coral); }
+    .step-card.teal .code-chip{ color:var(--teal-dark); }
+
+    /* ---- WIFI ---- */
+    .wifi-card{
+      display:flex; align-items:center; gap:12px;
+      background:var(--surface); border:2px dashed var(--teal);
+      border-radius:16px; padding:14px 18px; text-align:left;
+      margin-top:18px;
+    }
+    .wifi-card svg{ flex:none; }
+    .wifi-card .label{ font-size:.72rem; color:#7A8A90; letter-spacing:.4px; }
+    .wifi-card .value{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem; color:var(--text); }
+
+    .access-photo{ margin-top:18px; }
+
+    /* ---- BENEFIT ---- */
+    .benefit-card{
+      background:var(--yellow); border-radius:18px; padding:20px; text-align:left;
+    }
+    .benefit-card h2{ color:#7A4E00; display:flex; align-items:center; gap:8px; font-size:1.1rem; margin-bottom:10px; }
+    .benefit-card p{ color:#7A4E00; }
+
+    /* ---- HELP ---- */
+    .help-card{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      text-align:left;
+    }
+    .help-card .wa-circle{
+      width:44px; height:44px; border-radius:50%; background:#25D366;
+      display:flex; align-items:center; justify-content:center; flex:none;
     }
 
     .lang-switch{
@@ -100,10 +169,12 @@
       color:#fff;
     }
 
-    footer.bg-dark{
-      background:#26343A;
-    }
+    footer.bg-dark{ background:#26343A; border-radius:24px; }
     footer p{ color:#D7F5F2; }
+
+    @media (max-width:600px){
+      .hero-postal{ padding:28px 18px 24px; }
+    }
   </style>
 </head>
 <body>
@@ -121,173 +192,234 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
-      <h1>Bienvenid@ a MAGIA D 102</h1>
+      <h1>Bienvenid@ a MAGIA D102</h1>
       <p class="lead">Donde cada llegada es el inicio de tus vacaciones</p>
-      <p class="mt-3 preformateado">Gracias por elegir AR Vacaciones. Estás a punto de entrar a un espacio pensado para que tu estancia sea tan fluida como la brisa del Caribe. Aquí tienes todo lo que necesitas para llegar sin complicaciones y empezar a disfrutar desde el minuto uno.
-
-📍 Dirección: Calle 16 Nte 1a, Gonzalo Guerrero, Playa del Carmen, Q.R., México</p>
-      <a href="https://maps.app.goo.gl/4tptAubXLcBYkrUA9" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Gracias por elegir AR Vacaciones. Acá tenés todo lo que necesitás para llegar sin vueltas y empezar a disfrutar desde el minuto uno.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 16 Nte 1a, Gonzalo Guerrero, Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/4tptAubXLcBYkrUA9" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
-      <h1>Welcome to MAGIA D 102</h1>
+      <h1>Welcome to MAGIA D102</h1>
       <p class="lead">Where every arrival is the beginning of your vacation</p>
-      <p class="mt-3 preformateado">Thank you for choosing AR Vacaciones. You're about to enter a space designed to make your stay as seamless as the Caribbean breeze. Here, you'll find everything you need to arrive hassle-free and start enjoying yourself from the very first minute.
-
-📍 Address: Calle 16 Nte 1a, Gonzalo Guerrero, Playa del Carmen, Q.R., Mexico</p>
-      <a href="https://maps.app.goo.gl/4tptAubXLcBYkrUA9" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Thank you for choosing AR Vacaciones. Here's everything you need to arrive hassle-free and start enjoying yourself from the very first minute.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 16 Nte 1a, Gonzalo Guerrero, Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/4tptAubXLcBYkrUA9" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">0. Antes de tu llegada
-Necesitamos que nos envíes con anticipación, antes de tu check-in:
-🔹 Lista completa de las personas que se hospedarán en el departamento.
-🔹 Si llegas en vehículo: marca, modelo y placas.
 
-1. Acceso Peatonal – Entrada Principal
-El ingreso al condominio debe realizarse por la puerta principal, sin excepción.
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">0</div>
+      <div>
+        <p class="step-title">Antes de tu llegada</p>
+        <p class="step-text">Necesitamos que nos envíes con anticipación, antes de tu check-in:</p>
+        <ul class="step-list">
+          <li>Lista completa de las personas que se hospedarán</li>
+          <li>Si llegás en vehículo: marca, modelo y placas</li>
+        </ul>
+      </div>
+    </div>
 
-2. Registro en recepción
-Después de ingresar por la puerta principal, avanza recto hacia el área del estacionamiento.
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Acceso peatonal</p>
+        <p class="step-text">El ingreso al condominio debe realizarse por la puerta principal, sin excepción.</p>
+      </div>
+    </div>
 
-La recepción se encuentra en una puerta gris, casi al final de la pared blanca.
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Registro en recepción</p>
+        <p class="step-text">Avanza recto hacia el estacionamiento; la recepción está en la puerta gris, casi al final de la pared blanca. Da tu nombre y menciona que vienes con AR Vacaciones.</p>
+      </div>
+    </div>
 
-Da tu nombre y menciona que vienes con AR Vacaciones.
+    <div class="step-card coral">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Acceso al condominio</p>
+        <p class="step-text">Código para la puerta principal</p>
+        <span class="code-chip">🔐 8640#</span>
+      </div>
+    </div>
 
+    <div class="step-card teal">
+      <div class="step-badge">4</div>
+      <div>
+        <p class="step-title">Entrada al departamento D102</p>
+        <p class="step-text">Junto a la puerta encontrarás un lockbox con las llaves de tu estancia.</p>
+        <span class="code-chip">🔑 3355</span>
+      </div>
+    </div>
 
-3. Acceso al condominio
-Código para la puerta principal:</p><p class="preformateado"><span class="code-chip">🔐 8640#</span></p><p class="preformateado">
-4. Entrada al departamento D102
-Junto a la puerta encontrarás un lockbox.</p><p class="preformateado"><span class="code-chip">🔑 3355</span></p><p class="preformateado">
-Dentro están las llaves de tu estancia.
+    <div class="step-card">
+      <div class="step-badge">5</div>
+      <div>
+        <p class="step-title">Acceso vehicular</p>
+        <p class="step-text">El estacionamiento opera únicamente con TAG. Si no cuentas con uno al llegar, ingresá primero por la puerta principal para registrarte en recepción: ahí te lo entregarán para toda tu estancia.</p>
+      </div>
+    </div>
+  </div>
 
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">MAGIA D102 · Clave 1111122222</div>
+    </div>
+  </div>
 
-5. Acceso vehicular
-El estacionamiento opera únicamente con TAG.
-Si no cuentas con el TAG al momento de tu llegada, deberás ingresar primero por la puerta principal para realizar tu registro en recepción.
- Durante el registro, si necesitas acceso al estacionamiento, la recepción te entregará el TAG correspondiente para toda tu estancia.</p>
-
-  <p><strong>WiFi:</strong> MAGIA D102 / <strong>Clave:</strong> 1111122222</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentemagia.jpeg" alt="Imagen ingreso" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentemagia.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">0. Before you arrive
-Please send us in advance, before your check-in:
-🔹 Full list of guests staying in the apartment.
-🔹 If arriving by car: make, model, and license plate.
 
-1. Pedestrian Access – Main Entrance
-Entry to the condominium must be through the main entrance, without exception.
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">0</div>
+      <div>
+        <p class="step-title">Before you arrive</p>
+        <p class="step-text">Please send us in advance, before your check-in:</p>
+        <ul class="step-list">
+          <li>Full list of guests staying in the apartment</li>
+          <li>If arriving by car: make, model, and license plate</li>
+        </ul>
+      </div>
+    </div>
 
-2. Reception Check-in
-After entering through the main entrance, proceed straight ahead to the parking area.
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Pedestrian access</p>
+        <p class="step-text">Entry to the condominium must be through the main entrance, without exception.</p>
+      </div>
+    </div>
 
-The reception desk is located behind a gray door, near the end of the white wall.
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Reception check-in</p>
+        <p class="step-text">Proceed straight ahead to the parking area; the reception desk is behind the gray door, near the end of the white wall. Give your name and mention you are with AR Vacaciones.</p>
+      </div>
+    </div>
 
-Give your name and mention that you are with AR Vacaciones.
+    <div class="step-card coral">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Condominium access</p>
+        <p class="step-text">Code for the main entrance</p>
+        <span class="code-chip">🔐 8640#</span>
+      </div>
+    </div>
 
-3. Condominium Access
-Code for the main entrance:</p><p class="preformateado"><span class="code-chip">🔐 8640#</span></p><p class="preformateado">
-4. Entrance to Apartment D102
-Next to the door, you will find a lockbox.</p><p class="preformateado"><span class="code-chip">🔑 3355</span></p><p class="preformateado">
-Inside are the keys to your stay.
+    <div class="step-card teal">
+      <div class="step-badge">4</div>
+      <div>
+        <p class="step-title">Entrance to Apartment D102</p>
+        <p class="step-text">Next to the door you'll find a lockbox with the keys to your stay.</p>
+        <span class="code-chip">🔑 3355</span>
+      </div>
+    </div>
 
-5. Vehicle Access
-The parking garage operates exclusively with a TAG.
+    <div class="step-card">
+      <div class="step-badge">5</div>
+      <div>
+        <p class="step-title">Vehicle access</p>
+        <p class="step-text">The parking garage operates exclusively with a TAG. If you don't have one on arrival, check in at reception first and they'll provide it for your entire stay.</p>
+      </div>
+    </div>
+  </div>
 
-If you do not have a TAG upon arrival, you must first enter through the main entrance to check in at reception.
-During check-in, if you require parking access, reception will provide you with the corresponding TAG for your entire stay.</p>
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">MAGIA D102 · Password 1111122222</div>
+    </div>
+  </div>
 
-  <p><strong>Wi-Fi:</strong> MAGIA D102 / <strong>Password:</strong> 1111122222</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentemagia.jpeg" alt="Entrance reference" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentemagia.jpeg" alt="Entrance reference" class="img-principal access-photo">
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Teléfono: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Phone: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->
