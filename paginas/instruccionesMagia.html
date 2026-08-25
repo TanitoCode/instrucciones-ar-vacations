@@ -13,171 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
-
-  <!-- ===== SKIN: Postal Playera (prueba visual, solo esta página) ===== -->
-  <style>
-    :root{
-      --bg:#FFF7E8;
-      --surface:#ffffff;
-      --text:#26343A;
-      --muted:#4A5A60;
-      --line:#EADFC4;
-      --teal:#00A9A5;
-      --teal-dark:#00807D;
-      --coral:#E0631E;
-      --yellow:#FFD166;
-    }
-
-    h1, h2, h3{
-      font-family:'Fredoka', sans-serif;
-      border-bottom:none;
-    }
-
-    section{ border:none; box-shadow:none; }
-
-    /* ---- HERO ---- */
-    .hero-postal{
-      position:relative;
-      background:var(--teal);
-      color:#FFF7E8;
-      border-radius:24px;
-      padding:36px 22px 30px;
-      overflow:hidden;
-    }
-    .hero-postal::before{
-      content:"";
-      position:absolute; top:-40px; right:-40px;
-      width:140px; height:140px; border-radius:50%;
-      background:var(--yellow); opacity:.22;
-    }
-    .hero-postal::after{
-      content:"";
-      position:absolute; bottom:-30px; left:-30px;
-      width:110px; height:110px; border-radius:50%;
-      background:#FFF7E8; opacity:.15;
-    }
-    .hero-postal > *{ position:relative; }
-    .hero-badge{
-      display:inline-flex; align-items:center; gap:6px;
-      background:#FFF7E8; color:var(--teal-dark);
-      padding:6px 14px; border-radius:999px;
-      font-size:.75rem; font-weight:700; letter-spacing:.4px;
-    }
-    .hero-postal .logo-arvac{
-      border-radius:50%;
-      background:#fff;
-      padding:6px;
-      width:64px;
-    }
-    .hero-postal h1{ color:#FFF7E8; margin-top:12px; }
-    .hero-postal .lead{ color:#D7F5F2; font-weight:600; }
-    .hero-address{
-      display:inline-flex; align-items:center; gap:8px;
-      margin-top:6px; padding:10px 16px;
-      border:1.5px dashed rgba(255,247,232,.6); border-radius:14px;
-      font-size:.85rem; color:#FFF7E8;
-    }
-    .hero-postal .btn-outline-dark{
-      color:#FFF7E8;
-      border:1.5px dashed rgba(255,247,232,0.7);
-      background:transparent;
-      border-radius:999px;
-    }
-    .hero-postal .btn-outline-dark:hover{
-      background:rgba(255,247,232,0.15);
-      color:#FFF7E8;
-    }
-
-    /* ---- STEPS ---- */
-    section h2{ color:var(--teal-dark); margin-bottom:1.25rem; }
-
-    .steps{ display:flex; flex-direction:column; gap:14px; text-align:left; }
-
-    .step-card{
-      display:flex; gap:14px; align-items:flex-start;
-      background:var(--surface); border-radius:18px; padding:16px;
-      box-shadow:0 4px 12px rgba(38,52,58,0.08);
-    }
-    .step-card.coral{ background:var(--coral); color:#FFF7E8; }
-    .step-card.teal{ background:var(--teal); color:#FFF7E8; }
-
-    .step-badge{
-      flex:none; width:34px; height:34px; border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem;
-      background:var(--yellow); color:#7A4E00;
-    }
-    .step-card.coral .step-badge,
-    .step-card.teal .step-badge{ background:#FFF7E8; }
-    .step-card.coral .step-badge{ color:var(--coral); }
-    .step-card.teal .step-badge{ color:var(--teal-dark); }
-
-    .step-title{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:1rem; margin:0 0 4px; }
-    .step-card.coral .step-title, .step-card.teal .step-title{ color:#FFF7E8; }
-    .step-card:not(.coral):not(.teal) .step-title{ color:var(--teal-dark); }
-    .step-text{ margin:0; font-size:.92rem; line-height:1.55; color:var(--muted); }
-    .step-card.coral .step-text, .step-card.teal .step-text{ color:#FFF0E4; }
-    .step-card.teal .step-text{ color:#E3FBF8; }
-    .step-list{ margin:0 0 0 1.1rem; padding:0; font-size:.92rem; line-height:1.6; color:var(--muted); }
-
-    .code-chip{
-      display:inline-flex; align-items:center; gap:8px;
-      background:#FFF7E8; font-family:'Fredoka', sans-serif; font-weight:700;
-      font-size:1.2rem; letter-spacing:2px; padding:8px 18px;
-      border-radius:12px; margin-top:10px;
-    }
-    .step-card.coral .code-chip{ color:var(--coral); }
-    .step-card.teal .code-chip{ color:var(--teal-dark); }
-
-    /* ---- WIFI ---- */
-    .wifi-card{
-      display:flex; align-items:center; gap:12px;
-      background:var(--surface); border:2px dashed var(--teal);
-      border-radius:16px; padding:14px 18px; text-align:left;
-      margin-top:18px;
-    }
-    .wifi-card svg{ flex:none; }
-    .wifi-card .label{ font-size:.72rem; color:#7A8A90; letter-spacing:.4px; }
-    .wifi-card .value{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem; color:var(--text); }
-
-    .access-photo{ margin-top:18px; }
-
-    /* ---- BENEFIT ---- */
-    .benefit-card{
-      background:var(--yellow); border-radius:18px; padding:20px; text-align:left;
-    }
-    .benefit-card h2{ color:#7A4E00; display:flex; align-items:center; gap:8px; font-size:1.1rem; margin-bottom:10px; }
-    .benefit-card p{ color:#7A4E00; }
-
-    /* ---- HELP ---- */
-    .help-card{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      text-align:left;
-    }
-    .help-card .wa-circle{
-      width:44px; height:44px; border-radius:50%; background:#25D366;
-      display:flex; align-items:center; justify-content:center; flex:none;
-    }
-
-    .lang-switch{
-      background:#fff;
-      border:2px dashed var(--teal);
-    }
-    #lang-es:checked ~ .lang-switch label[for="lang-es"],
-    #lang-en:checked ~ .lang-switch label[for="lang-en"]{
-      background:var(--teal);
-      color:#fff;
-    }
-
-    footer.bg-dark{ background:#26343A; border-radius:24px; }
-    footer p{ color:#D7F5F2; }
-
-    @media (max-width:600px){
-      .hero-postal{ padding:28px 18px 24px; }
-    }
-  </style>
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -401,7 +238,7 @@
   <div class="help-card">
     <div>
       <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
-      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--text);">Laura · +52 984 310 0691</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
     <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
@@ -414,7 +251,7 @@
   <div class="help-card">
     <div>
       <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
-      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--text);">Laura · +52 984 310 0691</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
     <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
