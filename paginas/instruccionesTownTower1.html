@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -29,160 +29,190 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Bienvenid@ a TOWN TOWER 1</h1>
-      <p class="lead">✨ Donde el diseño se encuentra con el Caribe ✨</p>
-      <p class="mt-3 preformateado">Gracias por elegir AR Vacaciones.
- Has llegado a Town Tower, un condominio boutique en el corazón de Playa del Carmen, creado para quienes buscan más que un lugar donde dormir: buscan una experiencia. 🌴🌊
-Ubicación privilegiada, acceso sencillo y un depa pensado para que tu estancia sea tan cómoda como inolvidable.
-
-📍 Dirección exacta: Calle 26 Nte 144, Centro, 77723 Playa del Carmen, Q.R.</p>
-      <a href="https://maps.app.goo.gl/95TxMdPSBpawNNE49" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p class="lead">Donde el diseño se encuentra con el Caribe</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Gracias por elegir AR Vacaciones. Has llegado a Town Tower, un condominio boutique en el corazón de Playa del Carmen, creado para quienes buscan más que un lugar donde dormir: buscan una experiencia. Ubicación privilegiada, acceso sencillo y un depa pensado para que tu estancia sea tan cómoda como inolvidable.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 26 Nte 144, Centro, 77723 Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/95TxMdPSBpawNNE49" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Welcome to TOWN TOWER 1</h1>
-      <p class="lead">✨ Where design meets the Caribbean ✨</p>
-      <p class="mt-3 preformateado">Thank you for choosing AR Vacations.
-You've arrived at Town Tower, a boutique condominium in the heart of Playa del Carmen, created for those looking for more than just a place to sleep: they're looking for an experience. 🌴🌊
-Privileged location, easy access, and an apartment designed to make your stay as comfortable as it is unforgettable.
-
-📍 Exact address: Calle 26 Nte 144, Centro, 77723 Playa del Carmen, Q.R.</p>
-      <a href="https://maps.app.goo.gl/95TxMdPSBpawNNE49" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p class="lead">Where design meets the Caribbean</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Thank you for choosing AR Vacations. You've arrived at Town Tower, a boutique condominium in the heart of Playa del Carmen, created for those looking for more than just a place to sleep: they're looking for an experience. Privileged location, easy access, and an apartment designed to make your stay as comfortable as it is unforgettable.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 26 Nte 144, Centro, 77723 Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/95TxMdPSBpawNNE49" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">1️⃣ Acceso al edificio
-En la entrada principal encontrarás una chapa electrónica.
- 🔐 Código:  #251439# 
 
-Ingresa y dirígete al front desk para realizar tu registro obligatorio.
+  <div class="steps">
+    <div class="step-card coral">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Acceso al edificio</p>
+        <p class="step-text">En la entrada principal encontrarás una chapa electrónica. Ingresá y dirigite al front desk para realizar tu registro obligatorio.</p>
+        <span class="code-chip">🔐 #251439#</span>
+      </div>
+    </div>
 
-2️⃣ Acceso al departamento
-Ubica el Departamento N° 1 
+    <div class="step-card teal">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Acceso al departamento</p>
+        <p class="step-text">Ubicá el Departamento N° 1. A un costado de la puerta encontrarás una caja de seguridad MASTERLOCK con las llaves del departamento listas para vos.</p>
+        <span class="code-chip">🔐 5533</span>
+      </div>
+    </div>
 
-A un costado de la puerta encontrarás una caja de seguridad MASTERLOCK.
- 🔐 Código: 5533
+    <div class="step-card coral">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Acceso y salida del estacionamiento</p>
+        <p class="step-text">Entrada: usá el código de acceso electrónico. Salida: pasá la mano frente al sensor táctil y la puerta se abrirá automáticamente.</p>
+        <span class="code-chip">🔐 #987654#</span>
+      </div>
+    </div>
+  </div>
 
-Dentro encontrarás las llaves del departamento listas para ti.
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">town tower 1 2 · Clave 1111122222</div>
+    </div>
+  </div>
 
-3️⃣  Acceso y salida estacionamiento 🚗
-   - Entrada: usa el código de acceso electrónico (#987654#).
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentetowntower.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
 
-   - Salida: pasa la mano frente al sensor táctil ✋ y la puerta se abrirá automáticamente.</p>
-
-  <p><strong>WiFi:</strong> town tower 1 2 / <strong>Clave:</strong> 1111122222</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentetowntower.jpeg" alt="Imagen ingreso" class="img-principal">
-
-  <a href="https://www.youtube.com/watch?v=aV0mFmZ12Mw" class="btn btn-primary mt-2" target="_blank">Ver video</a>
+  <a href="https://www.youtube.com/watch?v=aV0mFmZ12Mw" target="_blank" class="video-cta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF7E8"><path d="M8 5v14l11-7z"/></svg>
+    Mirá el video de llegada
+  </a>
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">1️⃣ Building Access
-At the main entrance, you will find an electronic lock.
-🔐 Code:  #251439#
 
-Enter and go to the front desk to complete your mandatory registration.
+  <div class="steps">
+    <div class="step-card coral">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Building access</p>
+        <p class="step-text">At the main entrance, you will find an electronic lock. Enter and go to the front desk to complete your mandatory registration.</p>
+        <span class="code-chip">🔐 #251439#</span>
+      </div>
+    </div>
 
-2️⃣ Apartment Access
-Locate Apartment No. 1
+    <div class="step-card teal">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Apartment access</p>
+        <p class="step-text">Locate Apartment No. 1. Next to the door, you will find a MASTERLOCK safe with the apartment keys ready for you.</p>
+        <span class="code-chip">🔐 5533</span>
+      </div>
+    </div>
 
-Next to the door, you will find a MASTERLOCK safe.
-🔐 Code: 5533
+    <div class="step-card coral">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Parking access and exit</p>
+        <p class="step-text">Entry: use the electronic access code. Exit: wave your hand in front of the touch sensor and the door will open automatically.</p>
+        <span class="code-chip">🔐 #987654#</span>
+      </div>
+    </div>
+  </div>
 
-Inside, you will find the apartment keys ready for you.
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">town tower 1 2 · Password 1111122222</div>
+    </div>
+  </div>
 
-3️⃣ Parking Access and Exit 🚗
-- Entry: Use the electronic access code (#987654#).
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentetowntower.jpeg" alt="Entrance reference" class="img-principal access-photo">
 
-- Exit: Wave your hand in front of the touch sensor ✋ and the door will open automatically.</p>
-
-  <p><strong>Wi-Fi:</strong> town tower 1 2 / <strong>Password:</strong> 1111122222</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentetowntower.jpeg" alt="Entrance reference" class="img-principal">
-
-  <a href="https://www.youtube.com/watch?v=aV0mFmZ12Mw" class="btn btn-primary mt-2" target="_blank">Watch video</a>
+  <a href="https://www.youtube.com/watch?v=aV0mFmZ12Mw" target="_blank" class="video-cta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF7E8"><path d="M8 5v14l11-7z"/></svg>
+    Watch video
+  </a>
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Teléfono: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Phone: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->

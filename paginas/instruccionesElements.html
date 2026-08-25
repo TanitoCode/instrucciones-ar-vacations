@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -29,154 +29,174 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Bienvenid@ a ELEMENTS 123</h1>
-      <p class="lead">✨ Tu refugio exclusivo frente al Caribe ✨</p>
-      <p class="mt-3 preformateado">Gracias por elegir AR Vacaciones.
- Has llegado a Elements 123, un complejo reconocido por su diseño, su ubicación privilegiada y ese acceso único a la playa que convierte tu estancia en una experiencia memorable. 🌊🌴
-Aquí no solo te hospedas: disfrutas Playa del Carmen como debe ser.
-
-📍 Dirección: Calle Flamingo, Av. CTM &, Zazil-ha, 77720 Playa del Carmen, Q.R.</p>
-      <a href="https://maps.app.goo.gl/56XTWKYUNVAeXLvN9" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p class="lead">Tu refugio exclusivo frente al Caribe</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Gracias por elegir AR Vacaciones. Has llegado a Elements 123, un complejo reconocido por su diseño, su ubicación privilegiada y ese acceso único a la playa que convierte tu estancia en una experiencia memorable. Aquí no solo te hospedas: disfrutás Playa del Carmen como debe ser.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle Flamingo, Av. CTM &, Zazil-ha, 77720 Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/56XTWKYUNVAeXLvN9" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Welcome to ELEMENTS 123</h1>
-      <p class="lead">✨ Your exclusive retreat overlooking the Caribbean ✨</p>
-      <p class="mt-3 preformateado">Thank you for choosing AR Vacations.
-You have arrived at Elements 123, a resort known for its design, its prime location, and its unique access to the beach, which makes your stay a truly memorable experience. 🌊🌴
-Here, you don't just stay—you experience Playa del Carmen the way it should be.
-
-📍 Address: Calle Flamingo, corner of Av. CTM, Zazil-Ha, 77720 Playa del Carmen, Quintana Roo</p>
-      <a href="https://maps.app.goo.gl/56XTWKYUNVAeXLvN9" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p class="lead">Your exclusive retreat overlooking the Caribbean</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Thank you for choosing AR Vacations. You have arrived at Elements 123, a resort known for its design, its prime location, and its unique access to the beach, which makes your stay a truly memorable experience. Here, you don't just stay—you experience Playa del Carmen the way it should be.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle Flamingo, corner of Av. CTM, Zazil-Ha, 77720 Playa del Carmen, Quintana Roo
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/56XTWKYUNVAeXLvN9" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">1️⃣ Registro en recepción
- Al llegar, dirígete al front desk.
- Ahí recibirás:
-🔹🔑 Las llaves de tu departamento 123
 
-🔹🎟️ Brazaletes para el club de playa y las áreas comunes
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Registro en recepción</p>
+        <p class="step-text">Al llegar, dirigite al front desk. Ahí recibirás las llaves de tu departamento 123 y los brazaletes para el club de playa y las áreas comunes. Ambos deben devolverse al momento de tu check-out.</p>
+      </div>
+    </div>
 
-👉 Ambos deben devolverse al momento de tu check-out.
-2️⃣ Acceso al departamento
- El ingreso es con las llaves físicas entregadas en recepción.
- Te recomendamos mantenerlas siempre en un lugar seguro.
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Acceso al departamento</p>
+        <p class="step-text">El ingreso es con las llaves físicas entregadas en recepción. Te recomendamos mantenerlas siempre en un lugar seguro.</p>
+      </div>
+    </div>
 
-🏝️ Acceso al Club de Playa
-Como huésped de Elements, tienes acceso exclusivo al club de playa.
- Solo necesitas portar en todo momento los brazaletes entregados en recepción.</p>
+    <div class="step-card">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Acceso al Club de Playa</p>
+        <p class="step-text">Como huésped de Elements, tenés acceso exclusivo al club de playa. Solo necesitás portar en todo momento los brazaletes entregados en recepción.</p>
+      </div>
+    </div>
+  </div>
 
-  <p><strong>WiFi: INFINITUYM14C7_5</strong>  / <strong>Clave: Da7ZaySsRf</strong> </p>
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">INFINITUYM14C7_5 · Clave Da7ZaySsRf</div>
+    </div>
+  </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteElements.jpeg" alt="Imagen ingreso" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteElements.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">1️⃣ Check-in at reception
-Upon arrival, please go to the front desk.
-There you will receive:
-🔹🔑 The keys to your apartment (123)
 
-🔹🎟️ Wristbands for the beach club and common areas
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Check-in at reception</p>
+        <p class="step-text">Upon arrival, please go to the front desk. There you will receive the keys to your apartment (123) and wristbands for the beach club and common areas. Both must be returned at check-out.</p>
+      </div>
+    </div>
 
-👉 Both must be returned at check-out.
-2️⃣ Access to your apartment
-Entry is with the physical keys given to you at reception.
-We recommend that you keep them in a safe place at all times.
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Access to your apartment</p>
+        <p class="step-text">Entry is with the physical keys given to you at reception. We recommend that you keep them in a safe place at all times.</p>
+      </div>
+    </div>
 
-🏝️ Access to the Beach Club
-As a guest of Elements, you have exclusive access to the beach club.
-You only need to wear the wristbands given to you at reception at all times.</p>
+    <div class="step-card">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Access to the Beach Club</p>
+        <p class="step-text">As a guest of Elements, you have exclusive access to the beach club. You only need to wear the wristbands given to you at reception at all times.</p>
+      </div>
+    </div>
+  </div>
 
-  <p><strong>WiFi: INFINITUYM14C7_5</strong>  / <strong>Clave: Da7ZaySsRf</strong> </p>
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">INFINITUYM14C7_5 · Password Da7ZaySsRf</div>
+    </div>
+  </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteElements.jpeg" alt="Entrance reference" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteElements.jpeg" alt="Entrance reference" class="img-principal access-photo">
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Teléfono: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Phone: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->

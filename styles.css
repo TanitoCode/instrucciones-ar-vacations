@@ -370,11 +370,9 @@ p{ color:var(--muted); }
   }
 
   .lang-switch{
-    left:12px;
     right:12px;
     bottom:12px;
     top:auto;
-    justify-content:center;
   }
 
   .lang-switch label{
@@ -383,4 +381,181 @@ p{ color:var(--muted); }
   }
 
   .content{ padding-bottom:78px; } /* evita tapar CTA por switch fijo */
+}
+
+/* ============================================================
+   SKIN: Postal Playera (tarjetas por paso)
+   Opcional por página — activar con class="skin-postal" en <body>.
+   Piloto: Magia D102. Tokens con prefijo --pp- para no chocar con
+   las variables del tema base (--bg, --text, --surface, etc.).
+   ============================================================ */
+.skin-postal{
+  --pp-bg:#FFF7E8;
+  --pp-surface:#ffffff;
+  --pp-text:#26343A;
+  --pp-muted:#4A5A60;
+  --pp-teal:#00A9A5;
+  --pp-teal-dark:#00807D;
+  --pp-coral:#E0631E;
+  --pp-yellow:#FFD166;
+  background:var(--pp-bg);
+}
+
+.skin-postal h1, .skin-postal h2, .skin-postal h3{
+  font-family:'Fredoka', sans-serif;
+  border-bottom:none;
+}
+
+.skin-postal section{ border:none; box-shadow:none; }
+
+/* ---- HERO ---- */
+.skin-postal .hero-postal{
+  position:relative;
+  background:var(--pp-teal);
+  color:#FFF7E8;
+  border-radius:24px;
+  padding:36px 22px 30px;
+  overflow:hidden;
+}
+.skin-postal .hero-postal::before{
+  content:"";
+  position:absolute; top:-40px; right:-40px;
+  width:140px; height:140px; border-radius:50%;
+  background:var(--pp-yellow); opacity:.22;
+}
+.skin-postal .hero-postal::after{
+  content:"";
+  position:absolute; bottom:-30px; left:-30px;
+  width:110px; height:110px; border-radius:50%;
+  background:#FFF7E8; opacity:.15;
+}
+.skin-postal .hero-postal > *{ position:relative; }
+.skin-postal .hero-badge{
+  display:inline-flex; align-items:center; gap:6px;
+  background:#FFF7E8; color:var(--pp-teal-dark);
+  padding:6px 14px; border-radius:999px;
+  font-size:.75rem; font-weight:700; letter-spacing:.4px;
+}
+.skin-postal .hero-postal .logo-arvac{
+  border-radius:50%;
+  background:#fff;
+  padding:6px;
+  width:64px;
+}
+.skin-postal .hero-postal h1{ color:#FFF7E8; margin-top:12px; }
+.skin-postal .hero-postal .lead{ color:#D7F5F2; font-weight:600; }
+.skin-postal .hero-address{
+  display:inline-flex; align-items:center; gap:8px;
+  margin-top:6px; padding:10px 16px;
+  border:1.5px dashed rgba(255,247,232,.6); border-radius:14px;
+  font-size:.85rem; color:#FFF7E8;
+}
+.skin-postal .hero-postal .btn-outline-dark{
+  color:#FFF7E8;
+  border:1.5px dashed rgba(255,247,232,0.7);
+  background:transparent;
+  border-radius:999px;
+}
+.skin-postal .hero-postal .btn-outline-dark:hover{
+  background:rgba(255,247,232,0.15);
+  color:#FFF7E8;
+}
+
+/* ---- STEPS ---- */
+.skin-postal section h2{ color:var(--pp-teal-dark); margin-bottom:1.25rem; }
+
+.skin-postal .steps{ display:flex; flex-direction:column; gap:14px; text-align:left; }
+
+.skin-postal .step-card{
+  display:flex; gap:14px; align-items:flex-start;
+  background:var(--pp-surface); border-radius:18px; padding:16px;
+  box-shadow:0 4px 12px rgba(38,52,58,0.08);
+}
+.skin-postal .step-card.coral{ background:var(--pp-coral); color:#FFF7E8; }
+.skin-postal .step-card.teal{ background:var(--pp-teal); color:#FFF7E8; }
+
+.skin-postal .step-badge{
+  flex:none; width:34px; height:34px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem;
+  background:var(--pp-yellow); color:#7A4E00;
+}
+.skin-postal .step-card.coral .step-badge,
+.skin-postal .step-card.teal .step-badge{ background:#FFF7E8; }
+.skin-postal .step-card.coral .step-badge{ color:var(--pp-coral); }
+.skin-postal .step-card.teal .step-badge{ color:var(--pp-teal-dark); }
+
+.skin-postal .step-title{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:1rem; margin:0 0 4px; }
+.skin-postal .step-card.coral .step-title, .skin-postal .step-card.teal .step-title{ color:#FFF7E8; }
+.skin-postal .step-card:not(.coral):not(.teal) .step-title{ color:var(--pp-teal-dark); }
+.skin-postal .step-text{ margin:0; font-size:.92rem; line-height:1.55; color:var(--pp-muted); }
+.skin-postal .step-card.coral .step-text, .skin-postal .step-card.teal .step-text{ color:#FFF0E4; }
+.skin-postal .step-card.teal .step-text{ color:#E3FBF8; }
+.skin-postal .step-list{ margin:0 0 0 1.1rem; padding:0; font-size:.92rem; line-height:1.6; color:var(--pp-muted); }
+
+.skin-postal .code-chip{
+  display:inline-flex; align-items:center; gap:8px;
+  background:#FFF7E8; font-family:'Fredoka', sans-serif; font-weight:700;
+  font-size:1.2rem; letter-spacing:2px; padding:8px 18px;
+  border-radius:12px; margin-top:10px;
+}
+.skin-postal .step-card.coral .code-chip{ color:var(--pp-coral); }
+.skin-postal .step-card.teal .code-chip{ color:var(--pp-teal-dark); }
+
+/* ---- WIFI ---- */
+.skin-postal .wifi-card{
+  display:flex; align-items:center; gap:12px;
+  background:var(--pp-surface); border:2px dashed var(--pp-teal);
+  border-radius:16px; padding:14px 18px; text-align:left;
+  margin-top:18px;
+}
+.skin-postal .wifi-card svg{ flex:none; }
+.skin-postal .wifi-card .label{ font-size:.72rem; color:#7A8A90; letter-spacing:.4px; }
+.skin-postal .wifi-card .value{ font-family:'Fredoka', sans-serif; font-weight:600; font-size:.95rem; color:var(--pp-text); }
+
+.skin-postal .access-photo{ margin-top:18px; }
+
+/* ---- VIDEO CTA (paginas con video de llegada) ---- */
+.skin-postal .video-cta{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  background:#26343A; color:#FFF7E8; text-decoration:none;
+  border-radius:14px; padding:14px 18px; margin-top:18px;
+  font-family:'Fredoka', sans-serif; font-weight:600; font-size:.92rem;
+  transition:background .15s ease;
+}
+.skin-postal .video-cta:hover{ background:#1c272b; color:#FFF7E8; }
+.skin-postal .video-cta svg{ flex:none; }
+
+/* ---- BENEFIT ---- */
+.skin-postal .benefit-card{
+  background:var(--pp-yellow); border-radius:18px; padding:20px; text-align:left;
+}
+.skin-postal .benefit-card h2{ color:#7A4E00; display:flex; align-items:center; gap:8px; font-size:1.1rem; margin-bottom:10px; }
+.skin-postal .benefit-card p{ color:#7A4E00; }
+
+/* ---- HELP ---- */
+.skin-postal .help-card{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  text-align:left;
+}
+.skin-postal .help-card .wa-circle{
+  width:44px; height:44px; border-radius:50%; background:#25D366;
+  display:flex; align-items:center; justify-content:center; flex:none;
+}
+
+.skin-postal .lang-switch{
+  background:#fff;
+  border:2px dashed var(--pp-teal);
+}
+.skin-postal #lang-es:checked ~ .lang-switch label[for="lang-es"],
+.skin-postal #lang-en:checked ~ .lang-switch label[for="lang-en"]{
+  background:var(--pp-teal);
+  color:#fff;
+}
+
+.skin-postal footer.bg-dark{ background:#26343A; border-radius:24px; }
+.skin-postal footer p{ color:#D7F5F2; }
+
+@media (max-width:600px){
+  .skin-postal .hero-postal{ padding:28px 18px 24px; }
 }
