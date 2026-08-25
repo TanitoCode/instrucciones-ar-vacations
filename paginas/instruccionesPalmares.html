@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -29,139 +29,204 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Bienvenid@ a PALMARES B1</h1>
       <p class="lead">Tu refugio de elegancia en el corazón de la Riviera Maya</p>
-      <p class="mt-3 preformateado">Gracias por elegir hospedarte con AR Vacaciones. Has llegado a Palmares, uno de los complejos más exclusivos de Playa del Carmen, donde la comodidad se encuentra con el diseño, y cada detalle está pensado para que vivas una experiencia sin complicaciones, sin estrés… solo disfrute.
-
-📍 Dirección: Calle 20 Nte, Gonzalo Guerrero, 77710 Playa del Carmen, Q.R.</p>
-      <a href="https://maps.app.goo.gl/z8EU6fqWr15H5CyS7" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Gracias por elegir hospedarte con AR Vacaciones. Has llegado a Palmares, uno de los complejos más exclusivos de Playa del Carmen, donde la comodidad se encuentra con el diseño, y cada detalle está pensado para que vivas una experiencia sin complicaciones, sin estrés... solo disfrute.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 20 Nte, Gonzalo Guerrero, 77710 Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/z8EU6fqWr15H5CyS7" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Welcome to PALMARES B1</h1>
       <p class="lead">Your refuge of elegance in the heart of the Riviera Maya</p>
-      <p class="mt-3 preformateado">Thank you for choosing to stay with AR Vacations. You've arrived at Palmares, one of Playa del Carmen's most exclusive resorts, where comfort meets design, and every detail is designed to ensure you have a hassle-free, stress-free experience... just enjoyment.
-
-📍 Address: Calle 20 Nte, Gonzalo Guerrero, 77710 Playa del Carmen, Q.R.</p>
-      <a href="https://maps.app.goo.gl/z8EU6fqWr15H5CyS7" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Thank you for choosing to stay with AR Vacations. You've arrived at Palmares, one of Playa del Carmen's most exclusive resorts, where comfort meets design, and every detail is designed to ensure you have a hassle-free, stress-free experience... just enjoyment.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 20 Nte, Gonzalo Guerrero, 77710 Playa del Carmen, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/z8EU6fqWr15H5CyS7" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">     1️⃣   Al llegar al Condominio , dirígete directamente a la recepción principal.
-     2️⃣   A tu izquierda, encontrarás una cerradura electrónica.
-     3️⃣   Código de acceso: 22025 ENT
-Una vez dentro, acude a recepción para registrarte y recibir tus brazaletes de acceso.
-🔐 Junto a la puerta del departamento encontrarás una caja de seguridad (MASTERLOCK).
-Código: 7898
-Dentro encontrarás las llaves del departamento B1.
 
-🚗 Estacionamiento: Tu lugar asignado es el B1, justo entrando al complejo, a la derecha, junto a la rampa de acceso.
-</p>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Registro en recepción</p>
+        <p class="step-text">Al llegar al condominio, dirigite directamente a la recepción principal.</p>
+      </div>
+    </div>
 
-  <p><strong>WiFi:</strong> INFINITUM2E2A / <strong>Clave:</strong> 7dHPCYpAEX</p>
+    <div class="step-card coral">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Acceso al edificio</p>
+        <p class="step-text">A tu izquierda encontrarás una cerradura electrónica. Una vez dentro, acudí a recepción para registrarte y recibir tus brazaletes de acceso.</p>
+        <span class="code-chip">🔐 22025 ENT</span>
+      </div>
+    </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentePalmares.jpeg" alt="Imagen ingreso" class="img-principal">
+    <div class="step-card teal">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Acceso al departamento B1</p>
+        <p class="step-text">Junto a la puerta del departamento encontrarás una caja de seguridad (MASTERLOCK) con las llaves del departamento B1.</p>
+        <span class="code-chip">🔐 7898</span>
+      </div>
+    </div>
 
-  <a href="https://youtu.be/K-mkC6A2PPo?si=Ct1sM7vwqmf8AwQ-" class="btn btn-primary mt-2" target="_blank">Ver video</a>
+    <div class="step-card">
+      <div class="step-badge">4</div>
+      <div>
+        <p class="step-title">Estacionamiento</p>
+        <p class="step-text">Tu lugar asignado es el B1, justo entrando al complejo, a la derecha, junto a la rampa de acceso.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">INFINITUM2E2A · Clave 7dHPCYpAEX</div>
+    </div>
+  </div>
+
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentePalmares.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
+
+  <a href="https://youtu.be/K-mkC6A2PPo?si=Ct1sM7vwqmf8AwQ-" target="_blank" class="video-cta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF7E8"><path d="M8 5v14l11-7z"/></svg>
+    Mirá el video de llegada
+  </a>
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">1️⃣ Upon arriving at the Condominium, go directly to the main reception desk.
-2️⃣ On your left, you will find an electronic lock.
-3️⃣ Access code: 22025 ENT
-Once inside, go to the reception desk to check in and receive your access bracelets.
-🔐 Next to the apartment door, you will find a lockbox (MASTERLOCK).
-Code: 7898
-Inside, you will find the keys to apartment B1.
 
-🚗 Parking: Your assigned space is B1, just inside the complex, on the right, next to the access ramp.</p>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Check-in at reception</p>
+        <p class="step-text">Upon arriving at the condominium, go directly to the main reception desk.</p>
+      </div>
+    </div>
 
-  <p><strong>Wi-Fi:</strong> INFINITUM2E2A / <strong>Password:</strong> 7dHPCYpAEX</p>
+    <div class="step-card coral">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Building access</p>
+        <p class="step-text">On your left, you will find an electronic lock. Once inside, go to the reception desk to check in and receive your access bracelets.</p>
+        <span class="code-chip">🔐 22025 ENT</span>
+      </div>
+    </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentePalmares.jpeg" alt="Entrance reference" class="img-principal">
+    <div class="step-card teal">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Access to apartment B1</p>
+        <p class="step-text">Next to the apartment door, you will find a lockbox (MASTERLOCK) with the keys to apartment B1.</p>
+        <span class="code-chip">🔐 7898</span>
+      </div>
+    </div>
 
-  <a href="https://youtu.be/K-mkC6A2PPo?si=Ct1sM7vwqmf8AwQ-" class="btn btn-primary mt-2" target="_blank">Watch video</a>
+    <div class="step-card">
+      <div class="step-badge">4</div>
+      <div>
+        <p class="step-title">Parking</p>
+        <p class="step-text">Your assigned space is B1, just inside the complex, on the right, next to the access ramp.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">INFINITUM2E2A · Password 7dHPCYpAEX</div>
+    </div>
+  </div>
+
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentePalmares.jpeg" alt="Entrance reference" class="img-principal access-photo">
+
+  <a href="https://youtu.be/K-mkC6A2PPo?si=Ct1sM7vwqmf8AwQ-" target="_blank" class="video-cta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFF7E8"><path d="M8 5v14l11-7z"/></svg>
+    Watch video
+  </a>
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Teléfono: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Phone: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->
