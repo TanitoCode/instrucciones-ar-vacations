@@ -370,11 +370,9 @@ p{ color:var(--muted); }
   }
 
   .lang-switch{
-    left:12px;
     right:12px;
     bottom:12px;
     top:auto;
-    justify-content:center;
   }
 
   .lang-switch label{
