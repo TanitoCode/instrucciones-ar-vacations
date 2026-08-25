@@ -515,6 +515,17 @@ p{ color:var(--muted); }
 
 .skin-postal .access-photo{ margin-top:18px; }
 
+/* ---- VIDEO CTA (paginas con video de llegada) ---- */
+.skin-postal .video-cta{
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  background:#26343A; color:#FFF7E8; text-decoration:none;
+  border-radius:14px; padding:14px 18px; margin-top:18px;
+  font-family:'Fredoka', sans-serif; font-weight:600; font-size:.92rem;
+  transition:background .15s ease;
+}
+.skin-postal .video-cta:hover{ background:#1c272b; color:#FFF7E8; }
+.skin-postal .video-cta svg{ flex:none; }
+
 /* ---- BENEFIT ---- */
 .skin-postal .benefit-card{
   background:var(--pp-yellow); border-radius:18px; padding:20px; text-align:left;
