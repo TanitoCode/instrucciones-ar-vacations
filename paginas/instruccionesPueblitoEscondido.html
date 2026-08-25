@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -29,143 +29,174 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Bienvenid@ a Pueblito Escondido 311</h1>
-      <p class="lead">Ya llegaste. Respira profundo. 🌴</p>
-      <p class="mt-3 preformateado">El Caribe ya estaba guardando este rincón para ti.
-En Pueblito Escondido el diseño se mezcla con la vibra auténtica de Playa del Carmen.
- Un lugar donde la calma manda, el ritmo baja y el mar está a solo unos pasos.
-Tu departamento  311 está listo para recibirte.
- Un espacio cómodo, pensado para que entres, sueltes las maletas y empieces a vivir tu propia versión del Caribe.
-Entrar será más fácil que abrir una cerveza bien fría… y mucho más refrescante. 🍺✨
-
-📍 Dirección exacta:  Calle 38 Nte S/N, Zazil-Ha, Playa del Carmen, Q.R., México</p>
-      <a href="https://maps.app.goo.gl/GH9APgEPxBgz8XTCA" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p class="lead">Ya llegaste. Respirá profundo</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">El Caribe ya estaba guardando este rincón para vos. En Pueblito Escondido el diseño se mezcla con la vibra auténtica de Playa del Carmen. Un lugar donde la calma manda, el ritmo baja y el mar está a solo unos pasos. Tu departamento 311 está listo para recibirte: un espacio cómodo, pensado para que entres, sueltes las maletas y empieces a vivir tu propia versión del Caribe.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 38 Nte S/N, Zazil-Ha, Playa del Carmen, Q.R., México
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/GH9APgEPxBgz8XTCA" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        PLAYA DEL CARMEN
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Welcome to Pueblito Escondido 311</h1>
-      <p class="lead">You've arrived. Take a deep breath. 🌴</p>
-      <p class="mt-3 preformateado">The Caribbean has already been saving this corner for you.
-At Pueblito Escondido, design blends with the authentic vibe of Playa del Carmen.
-A place where calm reigns, the pace slows, and the ocean is just steps away.
-Your apartment 311 is ready to welcome you.
-A comfortable space, designed for you to walk in, drop your bags, and begin experiencing your own version of the Caribbean.
-Stepping inside will be easier than opening an ice-cold beer... and much more refreshing. 🍺✨
-
-📍Exact address: Calle 38 Nte S/N, Zazil-Ha, Playa del Carmen, Q.R., Mexico</p>
-      <a href="https://maps.app.goo.gl/GH9APgEPxBgz8XTCA" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p class="lead">You've arrived. Take a deep breath</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">The Caribbean has already been saving this corner for you. At Pueblito Escondido, design blends with the authentic vibe of Playa del Carmen. A place where calm reigns, the pace slows, and the ocean is just steps away. Your apartment 311 is ready to welcome you: a comfortable space, designed for you to walk in, drop your bags, and begin experiencing your own version of the Caribbean.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Calle 38 Nte S/N, Zazil-Ha, Playa del Carmen, Q.R., Mexico
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/GH9APgEPxBgz8XTCA" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">👉 Cómo llegar sin perder tiempo:
- 1️⃣ Ve directo al front desk.
- 2️⃣ Da tu nombre y el número de tu unidad: 311.
- 3️⃣ Te entregarán tu tarjeta/llave de acceso. (Cuídala, es tu pase VIP al condominio).
- 4️⃣ Sube en ascensor al 3er piso.
- 5️⃣ Sal, gira a la izquierda, luego a la derecha… y ahí está: tu depa 311. 🏡✨
-</p>
 
-  <p><strong>WiFi:</strong> Pueblito / <strong>Clave:</strong> Pueblito001</p>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Registro en recepción</p>
+        <p class="step-text">Andá directo al front desk y dá tu nombre y el número de tu unidad: 311. Ahí te entregarán tu tarjeta/llave de acceso — cuidala, es tu pase al condominio.</p>
+      </div>
+    </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentepueblito.jpeg" alt="Imagen ingreso" class="img-principal">
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Subí al piso 3</p>
+        <p class="step-text">Subí en ascensor al 3er piso.</p>
+      </div>
+    </div>
 
-  
+    <div class="step-card">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Ubicación del depa</p>
+        <p class="step-text">Al salir, girá a la izquierda, luego a la derecha... y ahí está: tu depa 311.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">Pueblito · Clave Pueblito001</div>
+    </div>
+  </div>
+
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentepueblito.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">👉 How to get there quickly:
-1️⃣ Go directly to the front desk.
-2️⃣ Give your name and your unit number: 311.
-3️⃣ They'll give you your access card/key. (Take care of it, it's your VIP pass to the condominium.)
-4️⃣ Take the elevator to the 3rd floor.
-5️⃣ Exit, turn left, then right... and there it is: your apartment 311. 🏡✨</p>
 
-  <p><strong>Wi-Fi:</strong> Pueblito / <strong>Password:</strong> Pueblito001</p>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Check-in at reception</p>
+        <p class="step-text">Go directly to the front desk and give your name and your unit number: 311. There, they'll give you your access card/key — take care of it, it's your pass to the condominium.</p>
+      </div>
+    </div>
 
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentepueblito.jpeg" alt="Entrance reference" class="img-principal">
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Head up to the 3rd floor</p>
+        <p class="step-text">Take the elevator to the 3rd floor.</p>
+      </div>
+    </div>
 
-  
+    <div class="step-card">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Finding the apartment</p>
+        <p class="step-text">Exit, turn left, then right... and there it is: your apartment 311.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">Pueblito · Password Pueblito001</div>
+    </div>
+  </div>
+
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frentepueblito.jpeg" alt="Entrance reference" class="img-principal access-photo">
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Teléfono: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Laura</p>
-  <p class="mb-2">Phone: +52 9843100691</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/529843100691" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Laura · +52 984 310 0691</div>
     </div>
-  
+    <a href="https://wa.me/529843100691" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->
