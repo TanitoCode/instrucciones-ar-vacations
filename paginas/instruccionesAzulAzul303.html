@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Google Fonts (Nunito) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts (Nunito + Fredoka) -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
   <!-- Estilos globales -->
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="skin-postal">
 
   <!-- Radios fuera, al tope del body (hermanos de .content) -->
 <input type="radio" name="lang" id="lang-es" checked style="position:absolute;opacity:0;pointer-events:none;">
@@ -29,162 +29,182 @@
 
   <div class="content">
     <!-- ===== HEADER ESPAÑOL ===== -->
-    <header class="text-center lang lang-es">
+    <header class="text-center lang lang-es hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        MAHAHUAL
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Bienvenid@ a AZUL AZUL 303</h1>
-      <p class="lead">✨ Tu escapada al paraíso comienza aquí ✨</p>
-      <p class="mt-3 preformateado">Bienvenid@ a Azul Azul 303 by AR Vacaciones.
- Un lugar creado para quienes no buscan solo hospedaje, sino experiencia.
- Aquí, Mahahual te recibe con su ritmo lento, su brisa salada y la calma que el Caribe guarda solo para quienes saben elegir bien. 🌴</p>
-      <a href="https://maps.app.goo.gl/xoaG3S2Ms2gsGd3G7" class="btn btn-outline-dark mt-2" target="_blank">Ubicación</a>
+      <p class="lead">Tu escapada al paraíso comienza aquí</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Bienvenid@ a Azul Azul 303 by AR Vacaciones. Un lugar creado para quienes no buscan solo hospedaje, sino experiencia. Aquí, Mahahual te recibe con su ritmo lento, su brisa salada y la calma que el Caribe guarda solo para quienes saben elegir bien.</p>
+      <br>
+      <a href="https://maps.app.goo.gl/xoaG3S2Ms2gsGd3G7" class="btn btn-outline-dark mt-3" target="_blank">Ubicación</a>
     </header>
 
     <!-- ===== HEADER ENGLISH ===== -->
-    <header class="text-center lang lang-en">
+    <header class="text-center lang lang-en hero-postal">
+      <span class="hero-badge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="#00807D"><path d="M2 16.5 22 3l-4.5 20-6-5.5-3 3.5-1-6.5Z"/></svg>
+        MAHAHUAL
+      </span>
+      <br>
       <img src="https://instrucciones-ar-vacations.netlify.app/assets/logo.jpeg" alt="AR Vacations" class="logo-arvac">
       <h1>Welcome to AZUL AZUL 303</h1>
-      <p class="lead">✨ Your getaway to paradise starts here ✨</p>
-      <p class="mt-3 preformateado">Welcome to Azul Azul 303 by AR Vacaciones.
-A place created for those looking not just for accommodation, but for an experience.
-Here, Mahahual welcomes you with its slow pace, its salty breeze, and the calm that the Caribbean holds only for those who know how to choose wisely. 🌴
-
-📍 Address: Lot 12 Fraction 1, Mahahual, Q.R.</p>
-      <a href="https://maps.app.goo.gl/xoaG3S2Ms2gsGd3G7" class="btn btn-outline-dark mt-2" target="_blank">Location</a>
+      <p class="lead">Your getaway to paradise starts here</p>
+      <p style="color:#EAFBF9; font-size:.9rem; max-width:340px; margin:6px auto 0;">Welcome to Azul Azul 303 by AR Vacaciones. A place created for those looking not just for accommodation, but for an experience. Here, Mahahual welcomes you with its slow pace, its salty breeze, and the calm that the Caribbean holds only for those who know how to choose wisely.</p>
+      <div class="hero-address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFF7E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Lot 12 Fraction 1, Mahahual, Q.R.
+      </div>
+      <br>
+      <a href="https://maps.app.goo.gl/xoaG3S2Ms2gsGd3G7" class="btn btn-outline-dark mt-3" target="_blank">Location</a>
     </header>
 
     <!-- ===== INSTRUCCIONES (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
   <h2>Instrucciones de ingreso</h2>
-  <p class="preformateado">📦 Unidad: 303
- 🏢 Ubicación: Segunda planta (recuerda: en México la planta baja cuenta como nivel 0).
-🔼 Importante – Conteo de pisos:
 
-* Planta baja (nivel calle)
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Ubicación del depa (unidad 303)</p>
+        <p class="step-text">Tu depa está en la segunda planta. Recordá: en México la planta baja cuenta como nivel 0.</p>
+        <ul class="step-list">
+          <li>Planta baja (nivel calle)</li>
+          <li>Primera planta (1 nivel arriba)</li>
+          <li>Segunda planta (2 niveles arriba) — acá está tu depa 303</li>
+        </ul>
+      </div>
+    </div>
 
-* Primera planta (1 nivel arriba)
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Subí las escaleras</p>
+        <p class="step-text">El edificio no cuenta con elevador: subí 2 tramos de escaleras. Tenlo en cuenta si llevás equipaje pesado.</p>
+      </div>
+    </div>
 
-* Segunda planta (2 niveles arriba) 👉 Aquí está tu depa 303.
+    <div class="step-card teal">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Acceso al departamento</p>
+        <p class="step-text">Al llegar verás la puerta marcada con el número 303. Cerradura electrónica: el código se activa automáticamente a las 16:00 h (hora de check-in).</p>
+        <span class="code-chip">🔐 201030#</span>
+      </div>
+    </div>
+  </div>
 
-🪜 Sube 2 tramos de escaleras.
- ⚠️ El edificio NO cuenta con elevador (tómalo en cuenta si llevas equipaje pesado).
-Al llegar verás la puerta marcada con el número 303.
-🔐 Acceso al departamento
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">Vista Azul · Clave AzulAzul404</div>
+    </div>
+  </div>
 
-* Cerradura electrónica en la puerta
-
-* Código de acceso: 201030#
-
-* Se activa automáticamente a las 16:00 h (hora de check-in)</p>
-
-  <p><strong>WiFi:</strong> Vista Azul / <strong>Clave:</strong> AzulAzul404</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteAzulAzul303.jpeg" alt="Imagen ingreso" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteAzulAzul303.jpeg" alt="Imagen ingreso" class="img-principal access-photo">
 </section>
 
 <!-- ===== INSTRUCTIONS (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
   <h2>Check-in instructions</h2>
-  <p class="preformateado">📦 Unit: 303
-🏢 Location: Second floor (remember: in Mexico, the ground floor counts as level 0).
-🔼 Important – Floor count:
 
-* Ground floor (street level)
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-badge">1</div>
+      <div>
+        <p class="step-title">Finding the apartment (unit 303)</p>
+        <p class="step-text">Your apartment is on the second floor. Remember: in Mexico, the ground floor counts as level 0.</p>
+        <ul class="step-list">
+          <li>Ground floor (street level)</li>
+          <li>First floor (1 level up)</li>
+          <li>Second floor (2 levels up) — this is your apartment 303</li>
+        </ul>
+      </div>
+    </div>
 
-* First floor (1 level up)
+    <div class="step-card">
+      <div class="step-badge">2</div>
+      <div>
+        <p class="step-title">Go up the stairs</p>
+        <p class="step-text">The building does not have an elevator: go up 2 flights of stairs. Please take this into account if you have heavy luggage.</p>
+      </div>
+    </div>
 
-* Second floor (2 levels up) 👉 This is your apartment 303.
+    <div class="step-card teal">
+      <div class="step-badge">3</div>
+      <div>
+        <p class="step-title">Apartment access</p>
+        <p class="step-text">Upon arrival, you will see the door marked 303. Electronic door lock: the code activates automatically at 4:00 PM (check-in time).</p>
+        <span class="code-chip">🔐 201030#</span>
+      </div>
+    </div>
+  </div>
 
-🪜 Go up 2 flights of stairs.
-⚠️ The building does NOT have an elevator (please take this into account if you have heavy luggage).
-Upon arrival, you will see the door marked 303.
-🔐 Apartment access
+  <div class="wifi-card">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00A9A5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a11 11 0 0 1 14 0"/><path d="M8.2 15.8a6.5 6.5 0 0 1 7.6 0"/><path d="M11.3 19a2 2 0 0 1 1.4 0"/></svg>
+    <div>
+      <div class="label">WIFI</div>
+      <div class="value">Vista Azul · Password AzulAzul404</div>
+    </div>
+  </div>
 
-* Electronic door lock
-
-* Access code: 201030#
-
-* Activates automatically at 4:00 PM (check-in time)</p>
-
-  <p><strong>Wi-Fi:</strong> Vista Azul / <strong>Password:</strong> AzulAzul404</p>
-
-  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteAzulAzul303.jpeg" alt="Entrance reference" class="img-principal">
-
-  
+  <img src="https://instrucciones-ar-vacations.netlify.app/assets/frenteAzulAzul303.jpeg" alt="Entrance reference" class="img-principal access-photo">
 </section>
 
 
-    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== --> 
+    <!-- ===== BENEFICIO EXCLUSIVO (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>🎁 Beneficio Exclusivo por ser parte de la Comunidad AR</h2>
-  <p class="preformateado">
-    Como agradecimiento por confiar en nosotros, te damos acceso a un beneficio exclusivo solo para nuestros huéspedes:
-
-    👉 10% de descuento en tours, experiencias y transporte en la Riviera Maya.
-
-    Operador autorizado: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Solo menciona que eres parte de AR Vacaciones y accede a una experiencia más completa y personalizada.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contactar por WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Beneficio exclusivo Comunidad AR
+    </h2>
+    <p>Como agradecimiento por confiar en nosotros: 10% de descuento en tours, experiencias y transporte en la Riviera Maya con <strong>Cancun Amazing Travel</strong>. Solo mencioná que sos parte de AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contactar por WhatsApp</a>
+  </div>
 </section>
 
 <!-- ===== EXCLUSIVE BENEFIT (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>🎁 Exclusive Benefit for being part of the AR Community</h2>
-  <p class="preformateado">
-    As a thank you for trusting us, you have access to an exclusive benefit only for our guests:
-
-    👉 10% discount on tours, experiences, and transportation in the Riviera Maya.
-
-    Authorized operator: Cancun Amazing Travel  
-    📞 WhatsApp: +52 998 654 8001
-
-    Just mention you are part of AR Vacaciones and enjoy a more complete and personalized experience.
-  </p>
-
-  <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">
-    Contact via WhatsApp
-  </a>
-
-  
+  <div class="benefit-card">
+    <h2>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7A4E00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7a3 3 0 1 1-3-3c1.7 0 3 1.5 3 3ZM12 7a3 3 0 1 0 3-3c-1.7 0-3 1.5-3 3Z"/></svg>
+      Exclusive AR Community benefit
+    </h2>
+    <p>As a thank you for trusting us: 10% discount on tours, experiences, and transportation in the Riviera Maya with <strong>Cancun Amazing Travel</strong>. Just mention you're part of AR Vacaciones.</p>
+    <a href="https://wa.me/529986548001" target="_blank" class="btn-whatsapp">Contact via WhatsApp</a>
+  </div>
 </section>
 
   <!-- ===== CONTACTO DE AYUDA (ES) ===== -->
 <section class="mt-5 text-center lang lang-es">
-  <h2>¿Necesitas ayuda durante tu estancia?</h2>
-  <p class="mb-2">Lola</p>
-  <p class="mb-2">Teléfono: +52 56 3209 3399</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/525632093399" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">¿Necesitas ayuda durante tu estancia?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Lola · +52 56 3209 3399</div>
     </div>
-  
+    <a href="https://wa.me/525632093399" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== NEED HELP DURING YOUR STAY? (EN) ===== -->
 <section class="mt-5 text-center lang lang-en">
-  <h2>Need help during your stay?</h2>
-  <p class="mb-2">Lola</p>
-  <p class="mb-2">Phone: +52 56 3209 3399</p>
-
-  
-    <div class="btn-whatsapp-container">
-      <a href="https://wa.me/525632093399" target="_blank" class="btn-whatsapp">
-        WhatsApp
-      </a>
+  <div class="help-card">
+    <div>
+      <div style="font-size:.8rem; color:#7A8A90;">Need help during your stay?</div>
+      <div style="font-family:'Fredoka',sans-serif; font-weight:600; font-size:1rem; color:var(--pp-text);">Lola · +52 56 3209 3399</div>
     </div>
-  
+    <a href="https://wa.me/525632093399" target="_blank" class="wa-circle">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-1.3-.6-2.1-1.1-3-2.5-.2-.4.2-.3.6-1.1.1-.2 0-.3 0-.4L9.9 8.5c-.1-.3-.3-.3-.5-.3h-.4c-.1 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-.9.1-1Z"/></svg>
+    </a>
+  </div>
 </section>
 
 <!-- ===== FOOTER (ES) ===== -->
